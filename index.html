@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K. Harigaran — Software Engineer | Portfolio</title>
+  <meta name="description" content="K. Harigaran — Software Engineer skilled in Java, Python, Web Development and Data Analytics. Explore projects, experience, certifications and get in touch." />
+  <meta name="author" content="K. Harigaran" />
+  <meta name="theme-color" content="#05010f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="K. Harigaran — Software Engineer" />
+  <meta property="og:description" content="Java · Python · Web Development · Data Analytics. Building the future, one line of code at a time." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    try { var t = localStorage.getItem('kh-theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    // If main.js never loads, fall back to the static (fully visible) layout.
+    window.__khFallback = setTimeout(function () { document.documentElement.classList.replace('js', 'no-js'); }, 8000);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Icon sprite ===== -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="neonGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" style="stop-color:var(--n1)" />
+        <stop offset="1" style="stop-color:var(--n2)" />
+      </linearGradient>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-map" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="i-branch" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-ear" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.74V17h8v-2.26A7 7 0 0 0 12 2z"/></symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+      <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l5.64 5.36A9 9 0 0 0 20.49 15"/></symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== Boot preloader ===== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="boot">
+      <div class="boot-logo glitch" data-text="&lt;KH/&gt;">&lt;KH/&gt;</div>
+      <div class="boot-log" id="bootLog"></div>
+      <div class="boot-bar"><span id="bootBar"></span></div>
+      <div class="boot-meta"><span>SYSTEM BOOT</span><span id="bootPct">0%</span></div>
+      <p class="boot-skip">click anywhere to skip</p>
+    </div>
+  </div>
+
+  <!-- ===== Ambient layers ===== -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo" aria-label="Back to top"><span class="br">&lt;</span>KH<span class="br">/&gt;</span></a>
+    <nav class="nav-menu" id="navMenu" aria-label="Primary">
+      <ul>
+        <li><a href="#about" class="nav-link"><span class="nav-num">01.</span><span data-scramble>About</span></a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-num">02.</span><span data-scramble>Skills</span></a></li>
+        <li><a href="#projects" class="nav-link"><span class="nav-num">03.</span><span data-scramble>Projects</span></a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-num">04.</span><span data-scramble>Experience</span></a></li>
+        <li><a href="#education" class="nav-link"><span class="nav-num">05.</span><span data-scramble>Education</span></a></li>
+        <li><a href="#awards" class="nav-link"><span class="nav-num">06.</span><span data-scramble>Awards</span></a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">07.</span><span data-scramble>Contact</span></a></li>
+      </ul>
+      <a href="assets/K_Harigaran_Resume.pdf" class="btn btn-ghost btn-sm nav-cta" download><svg class="i"><use href="#i-download"/></svg><span>Resume</span></a>
+    </nav>
+    <div class="nav-tools">
+      <div class="theme-switch" role="group" aria-label="Neon colour theme">
+        <button class="swatch" data-theme-set="cyber" aria-label="Cyber theme (cyan and magenta)" title="Cyber"></button>
+        <button class="swatch" data-theme-set="synth" aria-label="Synthwave theme (pink and amber)" title="Synthwave"></button>
+        <button class="swatch" data-theme-set="matrix" aria-label="Matrix theme (green and cyan)" title="Matrix"></button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-floor" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-hello mono ha" style="--d:.05s"><span class="hello-bar"></span>Hello, World! I'm</p>
+          <h1 class="hero-name ha" style="--d:.2s"><span class="glitch" data-text="K. HARIGARAN">K. HARIGARAN</span></h1>
+          <p class="hero-role ha" style="--d:.35s">I'm a <span class="typed" id="typed">Software Engineer</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="hero-desc ha" style="--d:.5s">
+            Enthusiastic Software Engineer turning ideas into fast, elegant and reliable software — from
+            <b>Java</b> &amp; <b>Python</b> to modern <b>web apps</b> and <b>data-driven insights</b>.
+          </p>
+          <div class="hero-cta ha" style="--d:.65s">
+            <a href="#projects" class="btn btn-neon magnetic"><span>Explore My Work</span><svg class="i"><use href="#i-arrow-right"/></svg></a>
+            <a href="assets/K_Harigaran_Resume.pdf" download class="btn btn-ghost magnetic"><svg class="i"><use href="#i-download"/></svg><span>Download CV</span></a>
+          </div>
+          <div class="hero-socials ha" style="--d:.8s">
+            <a href="https://github.com/Harigaran2975" target="_blank" rel="noopener" class="social" aria-label="GitHub" data-tip="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+            <a href="https://www.linkedin.com/in/harigaran-k" target="_blank" rel="noopener" class="social" aria-label="LinkedIn" data-tip="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+            <a href="mailto:harigarank12a307@gmail.com" class="social" aria-label="Email" data-tip="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+            <span class="hero-line" aria-hidden="true"></span>
+            <span class="hero-loc mono"><svg class="i"><use href="#i-map"/></svg>Chennai, India</span>
+          </div>
+        </div>
+
+        <div class="hero-visual ha" style="--d:.3s">
+          <div class="avatar tilt" data-tilt-max="10">
+            <div class="avatar-glow"></div>
+            <div class="avatar-dash"></div>
+            <div class="avatar-ring-wrap"><div class="avatar-ring"></div></div>
+            <div class="avatar-photo">
+              <img src="assets/profile.jpg" alt="Portrait of K. Harigaran" width="279" height="390" />
+              <span class="glare"></span>
+            </div>
+            <div class="orbit" aria-hidden="true">
+              <span class="orbit-item" style="--i:0;--c:#f89820"><i class="devicon-java-plain"></i></span>
+              <span class="orbit-item" style="--i:1;--c:#4b8bbe"><i class="devicon-python-plain"></i></span>
+              <span class="orbit-item" style="--i:2;--c:#f7df1e"><i class="devicon-javascript-plain"></i></span>
+              <span class="orbit-item" style="--i:3;--c:#61dafb"><i class="devicon-react-original"></i></span>
+              <span class="orbit-item" style="--i:4;--c:#3fa9f5"><i class="devicon-mysql-plain"></i></span>
+              <span class="orbit-item" style="--i:5;--c:#e34f26"><i class="devicon-html5-plain"></i></span>
+            </div>
+          </div>
+          <div class="float-card fc-1"><span class="fc-ico"><svg class="i"><use href="#i-trophy"/></svg></span><div><b>Best Paper</b><small>ICSEEIS Award</small></div></div>
+          <div class="float-card fc-2"><span class="pulse-dot"></span><div><b>Open to Work</b><small>Software roles</small></div></div>
+          <div class="float-card fc-3"><b class="fc-big">8.1</b><div><b>CGPA</b><small>B.E. ECE</small></div></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><span class="mouse"><span class="wheel"></span></span><span class="mono">scroll</span></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">01.</span>
+          <h2 class="section-title" data-scramble>About Me</h2>
+          <span class="section-line"></span>
+        </header>
+
+        <div class="about-grid">
+          <div class="terminal reveal-left" id="terminal">
+            <div class="term-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="term-title mono"><svg class="i"><use href="#i-terminal"/></svg>harigaran@portfolio: ~</span>
+            </div>
+            <div class="term-body mono" id="termBody">
+              <div class="term-out" id="termOut">
+                <div class="term-line"><span class="t-prompt">$</span> whoami</div>
+                <div class="term-line t-out">K. Harigaran — Software Engineer</div>
+              </div>
+              <form class="term-input-row" id="termForm" autocomplete="off" hidden>
+                <label for="termInput" class="t-prompt">harigaran@portfolio:~$</label>
+                <input id="termInput" class="term-input" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command input" />
+              </form>
+            </div>
+          </div>
+
+          <div class="about-text reveal-right">
+            <h3 class="about-heading">Building the future, <span class="grad-text">one line of code</span> at a time.</h3>
+            <p>
+              I'm an enthusiastic <b>Software Engineering fresher</b> from Chennai with a
+              <b>B.E. in Electronics &amp; Communication Engineering</b>. I love transforming ideas into clean,
+              efficient code — from robust <b>Java</b> &amp; <b>Python</b> programs to responsive web apps powered by
+              <b>React</b>, <b>APIs</b> and <b>SQL</b>.
+            </p>
+            <p>
+              My ECE roots give me a rare edge: I understand systems from the <b>silicon up</b>. I've designed a
+              high-speed pipelined LFSR counter in Vivado and built a GSM-based real-time vehicle tracker.
+              Certified in <b>Azure</b> and <b>AI</b>, I bring strong <b>DSA</b>, <b>OOP</b> and problem-solving skills
+              to every challenge.
+            </p>
+            <ul class="about-facts">
+              <li><svg class="i"><use href="#i-map"/></svg>Ambattur, Chennai</li>
+              <li><svg class="i"><use href="#i-book"/></svg>B.E. ECE · 2025</li>
+              <li><svg class="i"><use href="#i-zap"/></svg>Open to opportunities</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal" style="--d:0s"><span class="stat-num" data-count="8.1" data-decimals="1">8.1</span><span class="stat-label">CGPA</span></div>
+          <div class="stat reveal" style="--d:.08s"><span class="stat-num" data-count="4" data-suffix="+">4+</span><span class="stat-label">Projects</span></div>
+          <div class="stat reveal" style="--d:.16s"><span class="stat-num" data-count="4">4</span><span class="stat-label">Internships</span></div>
+          <div class="stat reveal" style="--d:.24s"><span class="stat-num" data-count="6">6</span><span class="stat-label">Certifications</span></div>
+          <div class="stat reveal" style="--d:.32s"><span class="stat-num" data-count="2">2</span><span class="stat-label">Awards</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">02.</span>
+          <h2 class="section-title" data-scramble>Skills &amp; Stack</h2>
+          <span class="section-line"></span>
+        </header>
+        <p class="section-sub reveal">The languages, tools and superpowers I use to bring ideas to life.</p>
+      </div>
+
+      <div class="marquee-wrap reveal" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span class="chip" style="--c:#f89820"><i class="devicon-java-plain"></i>Java</span>
+            <span class="chip" style="--c:#4b8bbe"><i class="devicon-python-plain"></i>Python</span>
+            <span class="chip" style="--c:#f7df1e"><i class="devicon-javascript-plain"></i>JavaScript</span>
+            <span class="chip" style="--c:#61dafb"><i class="devicon-react-original"></i>React</span>
+            <span class="chip" style="--c:#e34f26"><i class="devicon-html5-plain"></i>HTML5</span>
+            <span class="chip" style="--c:#2965f1"><i class="devicon-css3-plain"></i>CSS3</span>
+            <span class="chip" style="--c:#3fa9f5"><i class="devicon-mysql-plain"></i>MySQL</span>
+            <span class="chip" style="--c:#f05032"><i class="devicon-git-plain"></i>Git</span>
+            <span class="chip" style="--c:#ffffff"><i class="devicon-github-original"></i>GitHub</span>
+            <span class="chip" style="--c:#2496ed"><i class="devicon-docker-plain"></i>Docker</span>
+            <span class="chip" style="--c:#0089d6"><i class="devicon-azure-plain"></i>Azure</span>
+            <span class="chip" style="--c:#3ddc84"><i class="devicon-android-plain"></i>Android</span>
+          </div>
+        </div>
+        <div class="marquee reverse">
+          <div class="marquee-track">
+            <span class="chip" style="--c:#21a366"><svg class="i"><use href="#i-grid"/></svg>Excel</span>
+            <span class="chip" style="--c:#f2c811"><svg class="i"><use href="#i-chart"/></svg>Power BI</span>
+            <span class="chip" style="--c:#ff2bd6"><svg class="i"><use href="#i-layers"/></svg>Data Structures</span>
+            <span class="chip" style="--c:#00f5ff"><svg class="i"><use href="#i-code"/></svg>Algorithms</span>
+            <span class="chip" style="--c:#9d4dff"><svg class="i"><use href="#i-cpu"/></svg>OOP</span>
+            <span class="chip" style="--c:#39ff14"><svg class="i"><use href="#i-cpu"/></svg>Vivado</span>
+            <span class="chip" style="--c:#ffb300"><svg class="i"><use href="#i-bulb"/></svg>Problem Solving</span>
+            <span class="chip" style="--c:#ff2a6d"><svg class="i"><use href="#i-users"/></svg>Leadership</span>
+            <span class="chip" style="--c:#00f5ff"><svg class="i"><use href="#i-zap"/></svg>Critical Thinking</span>
+            <span class="chip" style="--c:#0089d6"><svg class="i"><use href="#i-cloud"/></svg>Cloud &amp; AI</span>
+            <span class="chip" style="--c:#9d4dff"><svg class="i"><use href="#i-cpu"/></svg>Agentic AI</span>
+            <span class="chip" style="--c:#336791"><i class="devicon-postgresql-plain"></i>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="bento">
+          <article class="bento-card span-2 spot reveal">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-code"/></svg></span><h3>Programming Languages</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#f89820"><i class="devicon-java-plain"></i><span>Java</span></div>
+              <div class="tech" style="--c:#4b8bbe"><i class="devicon-python-plain"></i><span>Python</span></div>
+            </div>
+          </article>
+          <article class="bento-card span-2 spot reveal" style="--d:.08s">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-monitor"/></svg></span><h3>Web Technologies</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#e34f26"><i class="devicon-html5-plain"></i><span>HTML</span></div>
+              <div class="tech" style="--c:#2965f1"><i class="devicon-css3-plain"></i><span>CSS</span></div>
+              <div class="tech" style="--c:#f7df1e"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+              <div class="tech" style="--c:#61dafb"><i class="devicon-react-original"></i><span>React</span></div>
+            </div>
+          </article>
+          <article class="bento-card spot reveal">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-database"/></svg></span><h3>Database</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#3fa9f5"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+              <div class="tech" style="--c:#336791"><i class="devicon-postgresql-plain"></i><span>PostgreSQL</span></div>
+            </div>
+          </article>
+          <article class="bento-card spot reveal" style="--d:.08s">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-branch"/></svg></span><h3>Tools &amp; Version Control</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#f05032"><i class="devicon-git-plain"></i><span>Git</span></div>
+              <div class="tech" style="--c:#ffffff"><i class="devicon-github-original"></i><span>GitHub</span></div>
+              <div class="tech" style="--c:#2496ed"><i class="devicon-docker-plain"></i><span>Docker</span></div>
+            </div>
+          </article>
+          <article class="bento-card spot reveal" style="--d:.16s">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-cloud"/></svg></span><h3>Cloud &amp; AI</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#0089d6"><i class="devicon-azure-plain"></i><span>Azure</span></div>
+              <div class="tech" style="--c:#9d4dff"><svg class="i"><use href="#i-cpu"/></svg><span>Agentic AI</span></div>
+            </div>
+          </article>
+          <article class="bento-card spot reveal" style="--d:.24s">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-chart"/></svg></span><h3>Data Analytics</h3></div>
+            <div class="tech-list">
+              <div class="tech" style="--c:#21a366"><svg class="i"><use href="#i-grid"/></svg><span>Excel</span></div>
+              <div class="tech" style="--c:#f2c811"><svg class="i"><use href="#i-chart"/></svg><span>Power BI</span></div>
+            </div>
+          </article>
+          <article class="bento-card span-2 spot reveal">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-layers"/></svg></span><h3>Core Concepts</h3></div>
+            <div class="pills">
+              <span class="pill"><svg class="i"><use href="#i-layers"/></svg>Data Structures</span>
+              <span class="pill"><svg class="i"><use href="#i-code"/></svg>Algorithms</span>
+              <span class="pill"><svg class="i"><use href="#i-cpu"/></svg>Object-Oriented Programming</span>
+              <span class="pill"><svg class="i"><use href="#i-database"/></svg>SQL &amp; APIs</span>
+            </div>
+          </article>
+          <article class="bento-card span-2 spot reveal" style="--d:.08s">
+            <div class="bento-head"><span class="ico"><svg class="i"><use href="#i-star"/></svg></span><h3>Soft Skills</h3></div>
+            <div class="pills alt">
+              <span class="pill"><svg class="i"><use href="#i-bulb"/></svg>Problem Solving</span>
+              <span class="pill"><svg class="i"><use href="#i-users"/></svg>Leadership</span>
+              <span class="pill"><svg class="i"><use href="#i-ear"/></svg>Active Listening</span>
+              <span class="pill"><svg class="i"><use href="#i-zap"/></svg>Critical Thinking</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">03.</span>
+          <h2 class="section-title" data-scramble>Featured Projects</h2>
+          <span class="section-line"></span>
+        </header>
+        <p class="section-sub reveal">Every card below has a <b>live, interactive demo</b> — go ahead, play with them.</p>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="web" aria-pressed="false">Web &amp; Apps</button>
+          <button class="filter" data-filter="hardware" aria-pressed="false">Hardware &amp; IoT</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: LFSR -->
+          <article class="project reveal" data-cat="hardware">
+            <div class="project-card tilt" data-tilt-max="6">
+              <span class="glare"></span>
+              <div class="project-visual">
+                <span class="live-badge mono"><span class="pulse-dot"></span>LIVE SIM</span>
+                <div class="lfsr" id="lfsr">
+                  <div class="lfsr-top mono"><span>8-BIT LFSR · x⁸+x⁶+x⁵+x⁴+1</span><span class="clk">CLK <span class="led" id="lfsrLed"></span></span></div>
+                  <div class="lfsr-cells" id="lfsrCells"></div>
+                  <div class="lfsr-fb mono" id="lfsrFb">feedback = b0 ⊕ b2 ⊕ b3 ⊕ b4</div>
+                  <div class="lfsr-readout mono"><span>STATE <b id="lfsrHex">0xE1</b></span><span>CYCLE <b id="lfsrCycle">000</b>/255</span></div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta mono"><span>VLSI · Digital Design</span><span class="project-num">01</span></div>
+                <h3 class="project-title">High-Speed Counter using Pipelined LFSR</h3>
+                <p>Designed a counter on a modified Linear Feedback Shift Register principle with pipelining in Xilinx Vivado — shrinking area and power consumption while boosting speed for high-performance applications.</p>
+                <div class="metrics mono"><span class="metric">▼ Area</span><span class="metric">▼ Power</span><span class="metric">▲ Speed</span></div>
+                <div class="tags"><span>Vivado</span><span>LFSR</span><span>Pipelining</span><span>Digital Design</span></div>
+                <div class="project-links"><a class="link-arrow" href="https://github.com/Harigaran2975?tab=repositories" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>View on GitHub<svg class="i"><use href="#i-external"/></svg></a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Vehicle tracking -->
+          <article class="project reveal" data-cat="hardware" style="--d:.1s">
+            <div class="project-card tilt" data-tilt-max="6">
+              <span class="glare"></span>
+              <div class="project-visual">
+                <span class="live-badge mono"><span class="pulse-dot"></span>TRACKING</span>
+                <div class="tracker">
+                  <div class="radar" aria-hidden="true">
+                    <span class="radar-ring"></span><span class="radar-ring r2"></span><span class="radar-ring r3"></span>
+                    <span class="radar-cross"></span>
+                    <span class="radar-sweep"></span>
+                    <span class="blip" id="blip"></span>
+                  </div>
+                  <div class="gps mono">
+                    <span>GSM <b class="ok">● ONLINE</b></span>
+                    <span>LAT <b id="gpsLat">13.1143</b>°N</span>
+                    <span>LNG <b id="gpsLng">80.1548</b>°E</span>
+                    <span>SPD <b id="gpsSpd">42</b> km/h</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta mono"><span>Embedded · IoT</span><span class="project-num">02</span></div>
+                <h3 class="project-title">Real-Time Vehicle Tracking System</h3>
+                <p>Engineered a real-time vehicle tracking system that uses GSM communication to monitor and report a vehicle's location on the move — enabling live tracking for safety and fleet monitoring.</p>
+                <div class="metrics mono"><span class="metric">Real-time</span><span class="metric">GSM Link</span><span class="metric">Location Alerts</span></div>
+                <div class="tags"><span>GSM</span><span>Embedded Systems</span><span>IoT</span><span>Tracking</span></div>
+                <div class="project-links"><a class="link-arrow" href="https://github.com/Harigaran2975?tab=repositories" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>View on GitHub<svg class="i"><use href="#i-external"/></svg></a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Tic Tac Toe -->
+          <article class="project reveal" data-cat="web">
+            <div class="project-card tilt" data-tilt-max="3">
+              <span class="glare"></span>
+              <div class="project-visual">
+                <span class="live-badge mono"><span class="pulse-dot"></span>PLAY NOW</span>
+                <div class="ttt" id="ttt">
+                  <div class="ttt-board" id="tttBoard" role="grid" aria-label="Tic Tac Toe board — you play X"></div>
+                  <div class="ttt-side">
+                    <p class="ttt-status mono" id="tttStatus" aria-live="polite">Your move — you're <b class="x">X</b></p>
+                    <div class="ttt-score mono"><span>YOU<b id="sX">0</b></span><span>AI<b id="sO">0</b></span><span>DRAW<b id="sD">0</b></span></div>
+                    <button class="ttt-reset mono" id="tttReset" type="button"><svg class="i"><use href="#i-refresh"/></svg>New game</button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta mono"><span>Game · Web &amp; Android</span><span class="project-num">03</span></div>
+                <h3 class="project-title">Tic Tac Toe Game</h3>
+                <p>A sleek Tic Tac Toe game built with HTML, CSS, JavaScript and React, then packaged into an Android app. The mini version above is fully playable — can you beat the AI?</p>
+                <div class="metrics mono"><span class="metric">Web + Mobile</span><span class="metric">React UI</span></div>
+                <div class="tags"><span>React</span><span>JavaScript</span><span>HTML/CSS</span><span>Android</span></div>
+                <div class="project-links"><a class="link-arrow" href="https://github.com/Harigaran2975?tab=repositories" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>View on GitHub<svg class="i"><use href="#i-external"/></svg></a></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Weather -->
+          <article class="project reveal" data-cat="web" style="--d:.1s">
+            <div class="project-card tilt" data-tilt-max="6">
+              <span class="glare"></span>
+              <div class="project-visual">
+                <span class="live-badge mono" id="wxBadge"><span class="pulse-dot"></span>LIVE DATA</span>
+                <div class="weather" id="weather" data-wx="sun">
+                  <div class="wx-icon" aria-hidden="true">
+                    <span class="wx-sun"></span>
+                    <span class="wx-moon"></span>
+                    <span class="wx-cloud"></span>
+                    <span class="wx-rain"><i></i><i></i><i></i><i></i></span>
+                    <span class="wx-bolt"></span>
+                  </div>
+                  <div class="wx-info">
+                    <span class="wx-loc mono"><svg class="i"><use href="#i-map"/></svg>Chennai, IN</span>
+                    <div class="wx-temp"><span id="wxTemp">--</span><sup>°C</sup></div>
+                    <div class="wx-cond" id="wxCond">Connecting…</div>
+                    <div class="wx-extra mono"><span>HUM <b id="wxHum">--</b>%</span><span>WIND <b id="wxWind">--</b> km/h</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta mono"><span>Web · REST API</span><span class="project-num">04</span></div>
+                <h3 class="project-title">Weather Website</h3>
+                <p>A responsive weather app that fetches real-time conditions for any location through a Weather API. The widget above is pulling <b>live weather for Chennai</b> right now.</p>
+                <div class="metrics mono"><span class="metric">Live API</span><span class="metric">Any Location</span></div>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Weather API</span></div>
+                <div class="project-links"><a class="link-arrow" href="https://github.com/Harigaran2975?tab=repositories" target="_blank" rel="noopener"><svg class="i"><use href="#i-github"/></svg>View on GitHub<svg class="i"><use href="#i-external"/></svg></a></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work reveal">
+          <a href="https://github.com/Harigaran2975" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><svg class="i"><use href="#i-github"/></svg><span>See more on GitHub</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">04.</span>
+          <h2 class="section-title" data-scramble>Experience</h2>
+          <span class="section-line"></span>
+        </header>
+        <p class="section-sub reveal">Internships that sharpened my engineering, design and client-facing skills.</p>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-line" aria-hidden="true"><span class="timeline-fill" id="timelineFill"></span></div>
+
+          <div class="tl-item">
+            <div class="tl-dot"><svg class="i"><use href="#i-ear"/></svg></div>
+            <div class="tl-card spot reveal-left">
+              <span class="tl-tag mono">Internship · Paid</span>
+              <h3>Process Executive</h3>
+              <p class="tl-company">Sutherland</p>
+              <p>Completed a paid internship as a Process Executive — interacting with a wide range of clients, understanding their needs and resolving their queries quickly and professionally.</p>
+              <div class="tags"><span>Client Communication</span><span>Problem Solving</span><span>Professionalism</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"><svg class="i"><use href="#i-monitor"/></svg></div>
+            <div class="tl-card spot reveal-right">
+              <span class="tl-tag mono">Internship</span>
+              <h3>Front End Development Intern</h3>
+              <p class="tl-company">Cognifyz</p>
+              <p>Built websites and crafted web designs with a focus on clean, responsive and user-friendly interfaces using modern front-end practices.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI Design</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"><svg class="i"><use href="#i-coffee"/></svg></div>
+            <div class="tl-card spot reveal-left">
+              <span class="tl-tag mono">Internship</span>
+              <h3>Java Development Intern</h3>
+              <p class="tl-company">CodSoft</p>
+              <p>Strengthened my programming foundation by mastering core Java alongside Data Structures — writing clean, object-oriented and efficient code.</p>
+              <div class="tags"><span>Java</span><span>OOP</span><span>Data Structures</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"><svg class="i"><use href="#i-cpu"/></svg></div>
+            <div class="tl-card spot reveal-right">
+              <span class="tl-tag mono">Internship</span>
+              <h3>Embedded Engineer &amp; IoT System Management</h3>
+              <p class="tl-company">Edufy Techno Solutions</p>
+              <p>Completed an internship focused on embedded engineering and IoT system management.</p>
+              <div class="tags"><span>Embedded Systems</span><span>IoT</span><span>System Management</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">05.</span>
+          <h2 class="section-title" data-scramble>Education</h2>
+          <span class="section-line"></span>
+        </header>
+        <p class="section-sub reveal">Consistent academic excellence — 90%+ in school and an 8.1 CGPA in engineering.</p>
+
+        <div class="edu-grid">
+          <div class="reveal">
+            <article class="edu-card spot tilt" data-tilt-max="8">
+              <span class="glare"></span>
+              <div class="ring" data-percent="81">
+                <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+                <div class="ring-label"><b>8.1</b><small>CGPA</small></div>
+              </div>
+              <span class="edu-year mono">2021 — 2025</span>
+              <h3>B.E. Electronics &amp; Communication Engineering</h3>
+              <p class="edu-school">S.A Engineering College</p>
+            </article>
+          </div>
+          <div class="reveal" style="--d:.1s">
+            <article class="edu-card spot tilt" data-tilt-max="8">
+              <span class="glare"></span>
+              <div class="ring" data-percent="91.1">
+                <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+                <div class="ring-label"><b>91.1%</b><small>HSC</small></div>
+              </div>
+              <span class="edu-year mono">2021</span>
+              <h3>Higher Secondary Certificate (HSC)</h3>
+              <p class="edu-school">Sethu Bhaskara Mat. Hr. Sec. School</p>
+            </article>
+          </div>
+          <div class="reveal" style="--d:.2s">
+            <article class="edu-card spot tilt" data-tilt-max="8">
+              <span class="glare"></span>
+              <div class="ring" data-percent="91.2">
+                <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52"/></svg>
+                <div class="ring-label"><b>91.2%</b><small>SSLC</small></div>
+              </div>
+              <span class="edu-year mono">2019</span>
+              <h3>Secondary School Leaving Certificate (SSLC)</h3>
+              <p class="edu-school">Sethu Bhaskara Mat. Hr. Sec. School</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AWARDS & CERTS ===== -->
+    <section id="awards" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">06.</span>
+          <h2 class="section-title" data-scramble>Achievements</h2>
+          <span class="section-line"></span>
+        </header>
+        <p class="section-sub reveal">Recognition and credentials earned along the way. <span class="mono hint-inline">Hover / tap a card to flip it ↻</span></p>
+
+        <div class="awards-grid">
+          <div class="flip reveal" tabindex="0">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <div class="award-icon"><svg class="i"><use href="#i-file"/></svg></div>
+                <h3>Best Paper Award</h3>
+                <p class="mono">ICSEEIS · SVCE, Tirupati</p>
+                <span class="flip-hint mono">↻ flip</span>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="i big"><use href="#i-trophy"/></svg>
+                <p>Honoured with the <b>Best Paper Award</b> at the ICSEEIS conference held at SVCE, Tirupati — recognising strong research, clarity and technical depth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip reveal" tabindex="0" style="--d:.1s">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <div class="award-icon"><svg class="i"><use href="#i-trophy"/></svg></div>
+                <h3>Best Project Award</h3>
+                <p class="mono">ICSEEIS · SVCE, Tirupati</p>
+                <span class="flip-hint mono">↻ flip</span>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="i big"><use href="#i-award"/></svg>
+                <p>Won the <b>Best Project Award</b> at ICSEEIS, SVCE Tirupati — standing out among competing projects for innovation and execution.</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip reveal" tabindex="0" style="--d:.2s">
+            <div class="flip-inner">
+              <div class="flip-face flip-front">
+                <div class="award-icon"><svg class="i"><use href="#i-target"/></svg></div>
+                <h3>Hackathon</h3>
+                <p class="mono">Reached Round 2</p>
+                <span class="flip-hint mono">↻ flip</span>
+              </div>
+              <div class="flip-face flip-back">
+                <svg class="i big"><use href="#i-zap"/></svg>
+                <p>Advanced to <b>Round 2</b> of a competitive hackathon — designing and building solutions under tight time pressure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="sub-title reveal"><svg class="i"><use href="#i-award"/></svg>Certifications</h3>
+        <div class="certs-grid">
+          <article class="cert spot reveal">
+            <span class="cert-icon" style="--c:#4b8bbe"><i class="devicon-python-plain"></i></span>
+            <div class="cert-text"><h4>Python Development</h4><p class="mono">Skill Upgrade</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+          <article class="cert spot reveal" style="--d:.06s">
+            <span class="cert-icon" style="--c:#f89820"><i class="devicon-java-plain"></i></span>
+            <div class="cert-text"><h4>Java Fundamentals</h4><p class="mono">Scaler</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+          <article class="cert spot reveal" style="--d:.12s">
+            <span class="cert-icon" style="--c:#e34f26"><i class="devicon-html5-plain"></i></span>
+            <div class="cert-text"><h4>Front End Development</h4><p class="mono">Simplilearn</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+          <article class="cert spot reveal" style="--d:.18s">
+            <span class="cert-icon" style="--c:#0089d6"><i class="devicon-azure-plain"></i></span>
+            <div class="cert-text"><h4>Azure Fundamentals</h4><p class="mono">Simplilearn</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+          <article class="cert spot reveal" style="--d:.24s">
+            <span class="cert-icon" style="--c:#9d4dff"><svg class="i"><use href="#i-cpu"/></svg></span>
+            <div class="cert-text"><h4>AI Foundation</h4><p class="mono">Infosys Springboard</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+          <article class="cert spot reveal" style="--d:.30s">
+            <span class="cert-icon" style="--c:#ffffff"><i class="devicon-github-original"></i></span>
+            <div class="cert-text"><h4>GitHub Copilot (GH-300)</h4><p class="mono">GitHub</p></div>
+            <svg class="i cert-check"><use href="#i-check"/></svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num mono">07.</span>
+          <h2 class="section-title" data-scramble>Get In Touch</h2>
+          <span class="section-line"></span>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h3 class="contact-heading">Let's build something <span class="grad-text">extraordinary</span> together.</h3>
+            <p>I'm actively looking for opportunities as a Software Engineer. Whether you have a role, a project, or just want to say hi — my inbox is always open and I'll get back to you soon!</p>
+
+            <div class="contact-list">
+              <div class="contact-item spot">
+                <span class="ci-icon"><svg class="i"><use href="#i-mail"/></svg></span>
+                <div class="ci-text"><small>Email</small><a href="mailto:harigarank12a307@gmail.com">harigarank12a307@gmail.com</a></div>
+                <button class="copy-btn" type="button" data-copy="harigarank12a307@gmail.com" aria-label="Copy email address" title="Copy"><svg class="i"><use href="#i-copy"/></svg></button>
+              </div>
+              <div class="contact-item spot">
+                <span class="ci-icon"><svg class="i"><use href="#i-phone"/></svg></span>
+                <div class="ci-text"><small>Phone</small><a href="tel:+919094448452">+91 90944 48452</a></div>
+                <button class="copy-btn" type="button" data-copy="+919094448452" aria-label="Copy phone number" title="Copy"><svg class="i"><use href="#i-copy"/></svg></button>
+              </div>
+              <div class="contact-item spot">
+                <span class="ci-icon"><svg class="i"><use href="#i-map"/></svg></span>
+                <div class="ci-text"><small>Location</small><span>Ambattur, Chennai, India</span></div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/Harigaran2975" target="_blank" rel="noopener" class="big-social"><svg class="i"><use href="#i-github"/></svg><span>GitHub</span></a>
+              <a href="https://www.linkedin.com/in/harigaran-k" target="_blank" rel="noopener" class="big-social li"><svg class="i"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm" novalidate>
+            <div class="form-title mono"><span class="pulse-dot"></span>new_message.txt</div>
+            <div class="field-row">
+              <div class="field">
+                <input id="cfName" name="name" type="text" required placeholder=" " autocomplete="name" />
+                <label for="cfName">Your Name</label>
+                <span class="field-line"></span>
+              </div>
+              <div class="field">
+                <input id="cfEmail" name="email" type="email" required placeholder=" " autocomplete="email" />
+                <label for="cfEmail">Your Email</label>
+                <span class="field-line"></span>
+              </div>
+            </div>
+            <div class="field">
+              <input id="cfSubject" name="subject" type="text" required placeholder=" " />
+              <label for="cfSubject">Subject</label>
+              <span class="field-line"></span>
+            </div>
+            <div class="field">
+              <textarea id="cfMessage" name="message" rows="5" required placeholder=" "></textarea>
+              <label for="cfMessage">Your Message</label>
+              <span class="field-line"></span>
+            </div>
+            <button type="submit" class="btn btn-neon magnetic btn-block"><span>Send Message</span><svg class="i"><use href="#i-send"/></svg></button>
+            <p class="form-note mono">Opens your email app with the message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="neon-sign" aria-label="Thanks for visiting">Thanks for <span class="flick">v</span>isiting<span class="flick2">!</span></p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#awards">Awards</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/Harigaran2975" target="_blank" rel="noopener" class="social" aria-label="GitHub" data-tip="GitHub"><svg class="i"><use href="#i-github"/></svg></a>
+        <a href="https://www.linkedin.com/in/harigaran-k" target="_blank" rel="noopener" class="social" aria-label="LinkedIn" data-tip="LinkedIn"><svg class="i"><use href="#i-linkedin"/></svg></a>
+        <a href="mailto:harigarank12a307@gmail.com" class="social" aria-label="Email" data-tip="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+      </div>
+      <p class="copyright mono">© <span id="year">2026</span> K. Harigaran · Designed &amp; built with <span class="heart">♥</span> and a lot of neon.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg class="i"><use href="#i-arrow-up"/></svg></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
